@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/subscriptionRL"
+    tools:context=".SubscriptionAcitivity">
+
+    <EditText
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:maxLength="3"
+        android:hint="Enter amount to purchase token"
+        android:textColorHint="@color/white"/>
+    <EditText
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card"
+        android:layout_below="@+id/amount"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:maxLength="16"
+        android:hint="Enter Your Card Number "
+        android:textColorHint="@color/white"/>
+    <EditText
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardCCV"
+        android:layout_below="@+id/card"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:maxLength="3"
+        android:hint="Enter Your Card CCV "
+        android:textColorHint="@color/white"/>
+    <EditText
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:layout_below="@+id/cardCCV"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="date"
+        android:hint="Enter Date"
+        android:textColorHint="@color/white"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment"
+        android:text="Pay Now"
+        android:layout_below="@id/date"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/input_design"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payment"
+        android:layout_margin="50dp"
+        android:background="@drawable/input_design"
+        >
+        <TextView
+            android:id="@+id/cost1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10 Token Cost : Rp.30.000"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/cost2"
+            android:layout_below="@id/cost1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20 Token Cost : Rp.50.000"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

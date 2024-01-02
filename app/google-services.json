@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "548893762116",
+    "project_id": "jojomusic-a67ec",
+    "storage_bucket": "jojomusic-a67ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548893762116:android:52be3a53817afd7b9b5211",
+        "android_client_info": {
+          "package_name": "com.example.musicproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV9b-jRp6M11umQuH-wH3MLc7DA-Rdaas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

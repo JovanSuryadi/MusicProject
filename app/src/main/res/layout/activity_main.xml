@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/I1"/>
+    
+    <ImageView
+        android:id="@+id/icon_main"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/logoplay"
+        android:layout_below="@+id/I1"/>
+
+    <LinearLayout
+        android:id="@+id/I2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/icon_main"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/app_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JojoPlayer"
+                android:textColor="@android:color/white"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/app_title"
+                android:text="Let songs in heart..."
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic"/>
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

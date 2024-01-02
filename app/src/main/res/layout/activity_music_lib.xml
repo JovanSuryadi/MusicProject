@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/musicLibrary"
+    tools:context=".MusicLibActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jojo Library"
+        android:textSize="60sp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:id="@+id/text_music"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:id="@+id/musicLibraryIV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_library_music_24"
+        android:layout_below="@+id/text_music"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:tint="@color/white"/>
+
+    <TextView
+        android:layout_below="@id/musicLibraryIV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subscription"
+        android:textSize="60sp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:id="@+id/text_subscription"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:id="@+id/subscriptionIV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_subscriptions_24"
+        android:layout_below="@+id/text_subscription"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:tint="@color/white"/>
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="56dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="120dp"
+        android:textColor="@color/white"
+        android:text="Change Theme :"
+        android:layout_centerHorizontal="true"
+        android:checked="false"
+        android:textOff="OFF"
+        android:layout_below="@id/subscriptionIV"
+        android:textOn="ON"/>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
